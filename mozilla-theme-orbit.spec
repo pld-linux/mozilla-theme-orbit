@@ -1,23 +1,23 @@
 Summary:	The best looking theme for Mozilla
 Summary(pl):	Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta³
 Name:		mozilla-theme-orbit
-%define		_realname	morbit
-%define	fver	1_5-MiK
-Version:	0.0.7.1
-Release:	3
+%define		_realname	orbit
+%define	fver	1_7-MiK
+Version:	1.7
+Release:	1
 Epoch:		5
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://downloads.mozdev.org/themes/themes/morbit-1_5-MiK.jar 
-# Source0-md5:	5d665b5ab68deca1a2f559c6a2ed0ee6
+Source0:	http://downloads.mozdev.org/themes/themes/1_7/%{_realname}-%{fver}.jar 
+# Source0-md5:	9becd58f71da9c501c252dd705f7f58a
 Source1:	%{_realname}-installed-chrome.txt
-URL:		http://morbit.cdn.gs/
+URL:		http://www.miksworld.de/
 Requires(post,postun):	textutils
 Requires:	mozilla >= 5:1.5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
-%define		_chromedir	%{_libdir}/mozilla/chrome
+%define		_chromedir	%{_datadir}/mozilla/chrome
 
 %description
 The best looking theme for Mozilla.
