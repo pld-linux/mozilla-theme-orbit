@@ -9,6 +9,7 @@ Group:		X11/Applications/Networking
 Source0:	http://www.alfordot.com/e/p/cdn/orbit3/%{_realname}-1_0-20020611.jar
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://morbit.cdn.gs/
+BuildArch:	noarch
 Requires:	mozilla >= 1.0-7
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
@@ -27,20 +28,19 @@ Najlepszy temat dla Mozilli jaki kiedykolwiek powsta³.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_chromedir}
 
-install %{SOURCE0} $RPM_BUILD_ROOT%{_chromedir}
-mv -f $RPM_BUILD_ROOT%{_chromedir}/morbit-1_0-20020611.jar $RPM_BUILD_ROOT%{_chromedir}/%{_realname}.jar
-install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
+install %{SOURCE0} %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
+mv -f $RPM_BUILD_ROOT%{_chromedir}/morbit-1_0-20020611.jar \
+	$RPM_BUILD_ROOT%{_chromedir}/%{_realname}.jar
 
-%post
-cd %{_chromedir}
-cat *-installed-chrome.txt >installed-chrome.txt
+%post 
+cat %{_chromedir}/*-installed-chrome.txt >%{_chromedir}/installed-chrome.txt
 
 %postun
-cd %{_chromedir}
-cat *-installed-chrome.txt >installed-chrome.txt
+cat %{_chromedir}/*-installed-chrome.txt >%{_chromedir}/installed-chrome.txt
+
+%clean 
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
