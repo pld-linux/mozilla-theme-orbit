@@ -1,0 +1,7 @@
+skin,install,url,jar:resource:/chrome/morbit.jar!/
+skin,install,url,jar:resource:/chrome/morbit.jar!/global/
+skin,install,url,jar:resource:/chrome/morbit.jar!/communicator/
+skin,install,url,jar:resource:/chrome/morbit.jar!/editor/
+skin,install,url,jar:resource:/chrome/morbit.jar!/messenger/
+skin,install,url,jar:resource:/chrome/morbit.jar!/navigator/
+skin,install,url,jar:resource:/chrome/morbit.jar!/chatzilla/
