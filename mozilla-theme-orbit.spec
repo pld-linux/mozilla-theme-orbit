@@ -13,7 +13,7 @@ Source0:	http://downloads.mozdev.org/themes/themes/morbit-1_5-MiK.jar
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://morbit.cdn.gs/
 Requires(post,postun):	textutils
-Requires:	mozilla >= 1.2.1
+Requires:	mozilla = 5:1.5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
