@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.alfordot.com/e/p/cdn/orbit3/%{_realname}-1_0-20020611.jar
+# Source0-md5:	bb5b38f207ef145742b91a3b2935692b
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://morbit.cdn.gs/
 Requires(post,postun):	textutils
