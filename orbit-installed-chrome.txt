@@ -1,0 +1,12 @@
+skin,install,url,jar:resource:/chrome/orbit.jar!/
+skin,install,url,jar:resource:/chrome/orbit.jar!/browser/
+skin,install,url,jar:resource:/chrome/orbit.jar!/calendar/
+skin,install,url,jar:resource:/chrome/orbit.jar!/chatzilla/
+skin,install,url,jar:resource:/chrome/orbit.jar!/communicator/
+skin,install,url,jar:resource:/chrome/orbit.jar!/editor/
+skin,install,url,jar:resource:/chrome/orbit.jar!/global/
+skin,install,url,jar:resource:/chrome/orbit.jar!/home/
+skin,install,url,jar:resource:/chrome/orbit.jar!/messenger/
+skin,install,url,jar:resource:/chrome/orbit.jar!/navigator/
+skin,install,url,jar:resource:/chrome/orbit.jar!/subskin/
+skin,install,url,jar:resource:/chrome/orbit.jar!/aim/
