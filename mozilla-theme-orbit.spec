@@ -2,16 +2,17 @@ Summary:	The best looking theme for Mozilla
 Summary(pl):	Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta³
 Name:		mozilla-theme-orbit
 %define		_realname	morbit
-Version:	0.0.4.2
-Release:	2
+%define	fver	1_3-20030519
+Version:	0.0.7.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://www.alfordot.com/e/p/cdn/orbit3/%{_realname}-1_0-20020611.jar
-# Source0-md5:	bb5b38f207ef145742b91a3b2935692b
+Source0:	http://downloads.uk1.mozdev.org/rsync/themes/themes/%{_realname}-%{fver}.jar
+# Source0-md5:	da1c5879f4fb3b6e976d5f0094cb1de0
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://morbit.cdn.gs/
 Requires(post,postun):	textutils
-Requires:	mozilla >= 1.0-7
+Requires:	mozilla >= 1.2.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
@@ -29,10 +30,8 @@ Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta³.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_chromedir}
 
-install %{SOURCE0} %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
-
-mv -f $RPM_BUILD_ROOT%{_chromedir}/morbit-1_0-20020611.jar \
-	$RPM_BUILD_ROOT%{_chromedir}/%{_realname}.jar
+install %{SOURCE0} $RPM_BUILD_ROOT%{_chromedir}/%{_realname}.jar
+install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
