@@ -1,5 +1,5 @@
 Summary:	The best looking theme for Mozilla
-Summary(pl):	Najlepszy temat dla Mozilli jaki kiedykolwiek powsta³
+Summary(pl):	Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta³
 Name:		mozilla-theme-orbit
 %define		_realname	morbit
 Version:	0.0.4.2
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 The best looking theme for Mozilla.
 
 %description -l pl
-Najlepszy temat dla Mozilli jaki kiedykolwiek powsta³.
+Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta³.
 
 %prep
 
