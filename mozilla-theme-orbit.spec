@@ -2,8 +2,8 @@ Summary:	The best looking theme for Mozilla
 Summary(pl):	Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta³
 Name:		mozilla-theme-orbit
 %define		_realname	orbit
-%define	fver	1_7-MiK
 Version:	1.7
+%define	fver	1_7-MiK
 Release:	1
 Epoch:		5
 License:	GPL
