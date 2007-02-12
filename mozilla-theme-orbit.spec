@@ -1,5 +1,5 @@
 Summary:	The best looking theme for Mozilla
-Summary(pl):	Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta≥
+Summary(pl.UTF-8):   Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta≈Ç
 Name:		mozilla-theme-orbit
 %define		_realname	orbit
 Version:	1.7
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The best looking theme for Mozilla.
 
-%description -l pl
-Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta≥.
+%description -l pl.UTF-8
+Najlepszy motyw dla Mozilli jaki kiedykolwiek powsta≈Ç.
 
 %prep
 
