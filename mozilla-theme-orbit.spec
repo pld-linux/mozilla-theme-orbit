@@ -1,5 +1,5 @@
 Summary:	The best looking theme for Mozilla
-Summary(pl.UTF-8):   Najlepszy motyw dla Mozilli jaki kiedykolwiek powstał
+Summary(pl.UTF-8):	Najlepszy motyw dla Mozilli jaki kiedykolwiek powstał
 Name:		mozilla-theme-orbit
 %define		_realname	orbit
 Version:	1.7
